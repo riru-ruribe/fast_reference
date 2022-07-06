@@ -3,5 +3,5 @@ using UnityEngine;
 
 public interface IFastReference
 {
-    void SetDirty(MonoBehaviour mb, FieldInfo fi, BindingFlags bf);
+    void SetDirty(MonoBehaviour mb, FieldInfo fi);
 }

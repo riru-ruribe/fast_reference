@@ -10,7 +10,7 @@ public class FastReferenceFormatAttribute : Attribute, IFastReference
 {
     public string Format;
 
-    public void SetDirty(MonoBehaviour mb, FieldInfo fi, BindingFlags bf)
+    public void SetDirty(MonoBehaviour mb, FieldInfo fi)
     {
         try
         {

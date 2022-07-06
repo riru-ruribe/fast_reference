@@ -5,7 +5,7 @@ using UnityEngine;
 [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
 public class FastReferenceMyselfAttribute : Attribute, IFastReference
 {
-    public void SetDirty(MonoBehaviour mb, FieldInfo fi, BindingFlags bf)
+    public void SetDirty(MonoBehaviour mb, FieldInfo fi)
     {
         try
         {

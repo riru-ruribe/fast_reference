@@ -16,7 +16,7 @@ class FastReferenceContext
         {
             foreach (var fr in fi.GetCustomAttributes(false).OfType<IFastReference>())
             {
-                fr?.SetDirty(mb, fi, bf);
+                fr?.SetDirty(mb, fi);
             }
         }
         EditorUtility.SetDirty(mb);

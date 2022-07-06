@@ -8,7 +8,7 @@ public class FastReferenceAttribute : Attribute, IFastReference
 {
     public string Key;
 
-    public void SetDirty(MonoBehaviour mb, FieldInfo fi, BindingFlags bf)
+    public void SetDirty(MonoBehaviour mb, FieldInfo fi)
     {
         var fieldName = Key ?? fi.Name;
         try
